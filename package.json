@@ -1,0 +1,19 @@
+{
+  "name": "a04-misaghh",
+  "version": "1.0.0",
+  "description": "misagh's a04 project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2022-fall/a04-misaghh.git"
+  },
+  "author": "misaghh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/comp426-2022-fall/a04-misaghh/issues"
+  },
+  "homepage": "https://github.com/comp426-2022-fall/a04-misaghh#readme"
+}
