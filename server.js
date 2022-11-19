@@ -7,9 +7,9 @@ app.use(express.urlencoded({extended : true}));
 
 const args = minimist(process.argv.slice(2));
 
-let port = 5000;
+var port = 5000;
 
-if (port in args){
+if ("port" in args){
     port = args.port;
 }
 
@@ -55,8 +55,5 @@ app.get('/app/roll/:sides/:dice/', (req, res) => {
 app.use(function(req, res){
     res.send("404 NOT FOUND")
 })
-
-
-
 
 app.listen(port)
