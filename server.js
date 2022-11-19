@@ -14,13 +14,13 @@ if ("port" in args){
 }
 
 app.get('/app/', (req, res) => {
-    res.status(200);
+   // res.status(200);
     res.send('200 OK');
 });
 
 
 app.get('/app/roll/', (req,res) => {
-    res.status(200)
+  //  res.status(200)
     res.send(roll(6,2,1))
 });
 
@@ -32,20 +32,20 @@ app.post('/app/roll/', (req, res) => {
 });
 
 app.get('/app/roll/:sides/', (req, res) => {
-    res.status(200)
+  //  res.status(200)
     let sides = parseInt(req.params.sides)
     res.send(roll(sides,2,1))
 })
 
 app.get('/app/roll/:sides/:dice/', (req, res) => {
-    res.status(200)
+   // res.status(200)
     let sides = parseInt(req.params.sides)
     let dice = parseInt(req.params.dice)
     res.send(roll(sides,dice,1))
 })
 
 app.get('/app/roll/:sides/:dice/', (req, res) => {
-    res.status(200)
+   // res.status(200)
     let sides = parseInt(req.params.sides)
     let dice = parseInt(req.params.dice)
     let roll = parseInt(req.params.roll)
