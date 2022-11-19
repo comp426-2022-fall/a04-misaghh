@@ -49,7 +49,11 @@ app.get('/app/roll/:sides/:dice/', (req, res) => {
     let sides = parseInt(req.params.sides)
     let dice = parseInt(req.params.dice)
     let roll = parseInt(req.params.roll)
-    res.send(roll(sides,dice,1))
+    res.send(roll(sides,dice,roll))
+})
+
+app.use(function(req, res){
+    res.send("404 NOT FOUND")
 })
 
 
