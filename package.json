@@ -2,9 +2,9 @@
   "name": "a04-misaghh",
   "version": "1.0.0",
   "description": "misagh's a04 project",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node server.js --port=5555"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/comp426-2022-fall/a04-misaghh/issues"
   },
-  "homepage": "https://github.com/comp426-2022-fall/a04-misaghh#readme"
+  "homepage": "https://github.com/comp426-2022-fall/a04-misaghh#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "minimist": "^1.2.7"
+  },
+  "type": "module"
 }
