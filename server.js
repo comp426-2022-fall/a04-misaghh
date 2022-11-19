@@ -20,39 +20,39 @@ app.get('/app/', (req, res) => {
 
 app.get('/app/roll/', (req,res) => {
   //  res.status(200)
-    res.send(roll(6,2,1))
+    res.send(roll(6,2,1));
 });
 
 app.post('/app/roll/', (req, res) => {
-    let sides = parseInt(req.body.sides)
-    let dice = parseInt(req.body.dice)
-    let rolls = parseInt(req.body.roll)
-    res.send(roll(sides,dice,rolls))
+    let sides = parseInt(req.body.sides);
+    let dice = parseInt(req.body.dice);
+    let rolls = parseInt(req.body.roll);
+    res.send(roll(sides,dice,rolls));
 });
 
 app.get('/app/roll/:sides/', (req, res) => {
   //  res.status(200)
-    let sides = parseInt(req.params.sides)
-    res.send(roll(sides,2,1))
+    let sides = parseInt(req.params.sides);
+    res.send(roll(sides,2,1));
 })
 
 app.get('/app/roll/:sides/:dice/', (req, res) => {
    // res.status(200)
-    let sides = parseInt(req.params.sides)
-    let dice = parseInt(req.params.dice)
-    res.send(roll(sides,dice,1))
+    let sides = parseInt(req.params.sides);
+    let dice = parseInt(req.params.dice);
+    res.send(roll(sides,dice,1));
 })
 
 app.get('/app/roll/:sides/:dice/', (req, res) => {
    // res.status(200)
-    let sides = parseInt(req.params.sides)
-    let dice = parseInt(req.params.dice)
-    let roll = parseInt(req.params.roll)
-    res.send(roll(sides,dice,roll))
+    let sides = parseInt(req.params.sides);
+    let dice = parseInt(req.params.dice);
+    let roll = parseInt(req.params.roll);
+    res.send(roll(sides,dice,roll));
 })
 
 app.use(function(req, res){
-    res.send("404 NOT FOUND")
+    res.send("404 NOT FOUND");
 })
 
-app.listen(port)
+app.listen(port);
